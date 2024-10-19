@@ -2,26 +2,175 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.header{
+  
+background-color: black;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
+.navbar{
+  color: aqua;
+  font-family: sans-serif;
+ height: 100px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0);
+  
+ 
+}
+.header-button{
+  display: flex;
+  justify-content: flex-end;
+   gap: 50px;
+  margin-top: 20px;
+}
+.logo{
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid aqua;
+  width: 90px;
+  position:absolute;
+  top: 5px;
+  box-shadow:  0px 0px 10px 5px rgb(4, 170, 221);
+}
+.line{
+  background-color: aqua;
+}
+.profile-Info{
+  background-color: black;
+  height: 660px;
+  color: aqua;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+}
+.info{
+  position: absolute;
+  top: 200px;
+  left: 40px;
+}
+.profile{
+  position: absolute;
+  top: 130px;
+  right: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow:  0px 0px 10px 5px rgb(4, 170, 221);
+  border: 6px solid aqua;
+}
+.footer {
+  background-color: #8c8f96;
+  padding: 20px 0;
+  color: #0f0e0e;
+  align-items: center;
+}
+.icon{
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  
+}
+.about{
+  background:linear-gradient(to right, aqua,rgb(14, 14, 221))  ;
+
+  height: 660px;
+  background-size: cover;
+}
+.heading{
+  color:rgb(18, 17, 17) ;
+  font-size:50px ;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+.about-me{
+  color: rgb(20, 5, 5);
+  font-size: 30px;
+}
+.contact{
+  min-height: 100vh;
+   background: linear-gradient(to right,aqua,blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.contact form{
+  width: 90%; 
+  max-width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+.contact form h1{
+   color: rgb(7, 17, 26);
+   font-weight : bolder;
+   margin-top: 20px;
+   width: 500px;
+   text-align: center;
+   font-size: 45px;
+}
+.contact form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background:none ;
+  border-bottom: 2px solid rgb(10, 11, 12);
+}
+.contact form input:placeholder{
+  color: rgb(0, 0, 0);
+
+}
+.contact form #lastname,
+.contact form #mobile{
+  margin-left:20px;
+}
+.contact form h4{
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+.contact form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+  width: 1em;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: #f1f1f1;
+}
+.contact form #button{
+  border: none;
+  background-color: #160894;
+  border-radius: 5%;
+  font-size: 20px;
+  transition: 0,3s;
+}
+.contact form #button:hover{
+  opacity: 0.7;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+
+
